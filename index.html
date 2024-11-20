@@ -1,1 +1,82 @@
-<h1>Hello EIEI</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item,
+      .item-special {
+        background-color: aqua;
+        padding: 32px;
+      }
+      .item-special {
+        /* grid-column: 1 / span 3;
+            grid-row: 2 ; */
+        /* grid-area: 1 / 2 / span 4 / span 4; */
+      }
+      .container {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(12, 1fr);
+        /* grid-template-columns: auto auto auto; */
+        /* grid-template-rows: 100px 100px 100px; */
+        /* column-gap: 32px;
+            row-gap: 16px;
+            background-color: black;
+            grid-template-areas: 
+            "header header header"
+            "menu main right"
+            "menu footer footer"
+            ; */
+        /* justify-content: center; */
+      }
+      /* .header{
+            grid-area: header;
+            display: grid;
+            grid-template-columns:200px auto 200px ;
+        }
+        .menu{
+            grid-area: menu;
+        }
+        .main{
+            grid-area: main;
+        }
+        .right{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">
+        <div>
+          <p>Logo</p>
+        </div>
+        <div>
+          <input type="text" />
+        </div>
+        <div>
+          <p>profile</p>
+        </div>
+      </div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item menu">menu</div>
+      <div class="item main">main</div>
+      <div class="item right">right</div>
+      <div class="item footer">footer</div>
+    </div>
+  </body>
+</html>
